@@ -1,0 +1,26 @@
+Lucas Botoni de Souza
+1) Qual o valor de y no final do programa? A seguir explique o que cada comando está realizando o valor 
+de cada variável em cada linha. 
+
+#include<stdio.h>
+#include<stdlib.h>
+
+main()
+{
+      int y, *p, x;
+      y = 0;
+      p = &y;      -> atribui o endereço de y ao ponteiro p.
+      x = *p;      -> x recebe o valor numérico do ponteiro p (*p=0, x=0).
+      x = 4;
+      printf("x = %d \n", x);
+      (*p)++;                 -> incrementa 1 ao valor de p (inicialmente definido como 0 pelo endereçamento de memória).
+      printf("*p = %d \n", *p);
+      x--;                     -> decrementa o valor de x de 4 para 3.
+      printf("x = %d \n", x);
+      (*p) += x;      -> o novo valor numérico do ponteiro p será a soma do x decrementado com o valor anterior de p (0).
+      printf("y = %d \n", y);
+      system("pause");
+}
+
+Assim, o valor final de y será 4.
+

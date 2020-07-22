@@ -1,0 +1,13 @@
+Lucas Botoni de Souza
+3) Responda as perguntas abaixo. Se achar necessário, faça testes no programa em C. 
+a) Explique a diferença entre 
+ p++; (*p)++; *(p++); 
+
+R: p++ -> endereça o próximo elemento do array.
+   (*p)++ -> incrementa 1 ao valor numérico do ponteiro p.
+   *(p++) -> endereça 1 elemento a frente do array (conteúdo do próximo elemento).
+
+
+b) O que significa *(p+10);? 
+
+R: Endereça 10 elementos a frente em um array (pega o conteúdo do décimo elemento a partir do elemento de referência).
